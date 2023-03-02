@@ -2,4 +2,17 @@
     <string name="app_name">WhatsSender</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+    <string name="enter_unsaved_whatsapp_number">Enter unsaved whatsapp number:</string>
+    <string name="ex_94719364390">ex: 94719364390</string>
+    <string name="go_to">go to</string>
+    <string name="select_your_whatsapp_type">Select Your whatsapp type:</string>
+    <string name="whatsapp">Whatsapp.</string>
+    <string name="whatsapp_business">Whatsapp business.</string>
+    <string name="other_unofficial_versions">Other unofficial versions.</string>
+    <string name="enter_your_whatsapp_package_name">Enter your whatsapp package name:</string>
+    <string name="ex_com_example_app">ex: com.example.app</string>
+    <string name="ok">Ok</string>
+    <string name="whatssender">WhatsSender</string>
+    <string name="by">by</string>
+    <string name="hexa2zero">HEXA2ZERO</string>
 </resources>

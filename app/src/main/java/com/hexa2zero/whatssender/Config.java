@@ -12,9 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Config extends AppCompatActivity {
 
     private static final String MY_PREF = "com.hexa2zero.whatssender";
-    private static String package_name = "package";
-    private static String theme_id = "theme";
-    private static String state_id = "state";
+    private static final String package_name = "package";
+    private static final String theme_id = "theme";
+    private static final String state_id = "state";
 
     public static void package_save(Context context , String pack_name){
         SharedPreferences spref = context.getSharedPreferences(MY_PREF,Context.MODE_PRIVATE);

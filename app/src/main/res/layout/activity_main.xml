@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10pt"
-        android:text="Enter unsaved whatsapp number: "
+        android:text="@string/enter_unsaved_whatsapp_number"
         android:textSize="17sp"
         android:textColor="@color/gray"
         android:layout_marginTop="40pt"
@@ -26,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20pt"
-        android:hint="ex: 94719364390 "
+        android:hint="@string/ex_94719364390"
         android:textSize="15sp"
         android:maxLength="11"
         android:layout_marginTop="5dp"
@@ -41,7 +40,7 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="go to"
+        android:text="@string/go_to"
         android:layout_gravity="center"
         android:textSize="15sp"
         android:background="@drawable/buttons"
@@ -52,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10pt"
         android:layout_marginTop="20dp"
-        android:text="Select Your whatsapp type:"
+        android:text="@string/select_your_whatsapp_type"
         android:textSize="17sp"
         android:textColor="@color/gray"
         android:fontFamily="@font/basic"/>
@@ -62,38 +61,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5pt"
-        android:layout_gravity="left">
+        android:layout_gravity="left"
+        tools:ignore="RtlHardcoded">
 
         <RadioButton
             android:id="@+id/whatsapp"
-            android:text="Whatsapp. "
+            android:text="@string/whatsapp"
             android:checked="true"
             android:onClick="radioSelected"
             android:layout_width="match_parent"
             android:layout_height="20pt"
             android:textSize="17sp"
             android:fontFamily="@font/basic"
-            android:tag="0"/>
+            android:tag="0"
+            tools:ignore="UsingOnClickInXml" />
 
         <RadioButton
             android:id="@+id/whatsapp_business"
             android:layout_width="match_parent"
-            android:text="Whatsapp business. "
+            android:text="@string/whatsapp_business"
             android:onClick="radioSelected"
             android:layout_height="20pt"
             android:textSize="17sp"
             android:fontFamily="@font/basic"
-            android:tag="1"/>
+            android:tag="1"
+            tools:ignore="UsingOnClickInXml" />
 
         <RadioButton
             android:id="@+id/others"
-            android:text="Other unofficial versions."
+            android:text="@string/other_unofficial_versions"
             android:layout_width="match_parent"
             android:onClick="radioSelected"
             android:layout_height="20pt"
             android:textSize="17sp"
             android:fontFamily="@font/basic"
-            android:tag="2"/>
+            android:tag="2"
+            tools:ignore="UsingOnClickInXml" />
 
         <TextView
             android:id="@+id/other_text_view"
@@ -105,7 +108,8 @@
             android:textSize="15sp"
             android:fontFamily="@font/basic"
             android:textColor="@color/gray"
-            android:layout_marginLeft="20pt"/>
+            android:layout_marginLeft="20pt"
+            tools:ignore="RtlHardcoded" />
 
     </RadioGroup>
 
@@ -121,7 +125,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20pt"
-            android:text="Enter your whatsapp package name:"
+            android:text="@string/enter_your_whatsapp_package_name"
             android:textSize="17sp"
             android:textColor="@color/gray"
             android:fontFamily="@font/basic"/>
@@ -131,19 +135,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="25pt"
-            android:hint="ex: com.example.app "
+            android:hint="@string/ex_com_example_app"
             android:textSize="17sp"
             android:layout_marginVertical="5dp"
             android:background="@drawable/edit_text_bkg"
             android:padding="15dp"
             android:fontFamily="@font/basic"
-            android:textStyle="italic"/>
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/other_btn"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:text="Ok"
+            android:text="@string/ok"
             android:layout_gravity="center"
             android:textSize="15sp"
             android:background="@drawable/buttons"

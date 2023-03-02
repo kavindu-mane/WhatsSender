@@ -1,10 +1,7 @@
 package com.hexa2zero.whatssender;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
@@ -28,28 +25,27 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private EditText editText , get_other_packages;
-    private Button button , other_package_btn;
+    private Button other_package_btn;
     private String ret_val;
     private RadioGroup radioGroup;
-    private RadioButton radioButton;
     private LinearLayout linearLayout;
     private TextView other_package;
     private String active_package;
-    private ImageButton theme_btn;
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         editText = findViewById(R.id.editText);
-        button = findViewById(R.id.button);
+        Button button = findViewById(R.id.button);
         radioGroup = findViewById(R.id.radio_group);
         linearLayout = findViewById(R.id.others_layout);
         get_other_packages = findViewById(R.id.other_package);
         other_package_btn = findViewById(R.id.other_btn);
         other_package = findViewById(R.id.other_text_view);
-        theme_btn = findViewById(R.id.theme_btn);
+        ImageButton theme_btn = findViewById(R.id.theme_btn);
 
         int temp_theme = Config.theme_return(getApplicationContext());
         switch (temp_theme){
@@ -65,31 +61,29 @@ public class MainActivity extends AppCompatActivity {
 
         startCheck();
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String get_number = editText.getText().toString();
+        button.setOnClickListener(v -> {
+            String get_number = editText.getText().toString();
 
-                if (get_number.length() == 11){
-                    ret_val = "https://wa.me/"+ get_number;
+            if (get_number.length() == 11){
+                ret_val = "https://wa.me/"+ get_number;
 
-                    try {
-                        Intent intent = new Intent(Intent.ACTION_VIEW , Uri.parse(ret_val));
-                        intent.setPackage(active_package);
-                        startActivity(intent);
-                    }catch (Exception e){
-                        Toast.makeText(getApplicationContext() ,"Something went wrong. Please try again.." , Toast.LENGTH_SHORT).show();
-                    }
-                }else {
-                    Toast.makeText(getApplicationContext() ,"Enter valid number and format..." , Toast.LENGTH_SHORT).show();
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW , Uri.parse(ret_val));
+                    intent.setPackage(active_package);
+                    startActivity(intent);
+                }catch (Exception e){
+                    Toast.makeText(getApplicationContext() ,"Something went wrong. Please try again.." , Toast.LENGTH_SHORT).show();
                 }
+            }else {
+                Toast.makeText(getApplicationContext() ,"Enter valid number and format..." , Toast.LENGTH_SHORT).show();
             }
         });
     }
 
+    @SuppressLint("SetTextI18n")
     public void radioSelected(View view) {
         int index = radioGroup.getCheckedRadioButtonId();
-        radioButton = findViewById(index);
+        RadioButton radioButton = findViewById(index);
         int tag = Integer.parseInt(radioButton.getTag().toString());
 
         switch (tag){
@@ -107,30 +101,28 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 2:
                 linearLayout.setVisibility(View.VISIBLE);
-                other_package_btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                       String package_temp = get_other_packages.getText().toString();
-                       get_other_packages.setText(null);
+                other_package_btn.setOnClickListener(v -> {
+                   String package_temp = get_other_packages.getText().toString();
+                   get_other_packages.setText(null);
 
-                        try {
-                            getPackageManager().getPackageInfo(package_temp,0);
-                            active_package = package_temp;
-                            Config.package_save(getApplicationContext() , package_temp);
-                            other_package.setText(package_temp + " ");
-                            other_package.setTextColor(getResources().getColor(R.color.gray));
+                    try {
+                        getPackageManager().getPackageInfo(package_temp,0);
+                        active_package = package_temp;
+                        Config.package_save(getApplicationContext() , package_temp);
+                        other_package.setText(package_temp + " ");
+                        other_package.setTextColor(getResources().getColor(R.color.gray));
 
-                        } catch (PackageManager.NameNotFoundException e) {
-                            other_package.setText(package_temp + " - not installed ");
-                            other_package.setTextColor(Color.RED);
-                        }
-
+                    } catch (PackageManager.NameNotFoundException e) {
+                        other_package.setText(package_temp + " - not installed ");
+                        other_package.setTextColor(Color.RED);
                     }
+
                 });
                 break;
         }
     }
 
+    @SuppressLint("SetTextI18n")
     public void startCheck(){
         RadioButton rdbtn1 = findViewById(R.id.whatsapp);
         RadioButton rdbtn2 = findViewById(R.id.whatsapp_business);
