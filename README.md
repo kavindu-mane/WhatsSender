@@ -34,5 +34,5 @@ ___
 
 <p align = "center">
    <img src = "https://img.shields.io/github/v/release/kavindu-mane/WhatsSender?label=version" alt = "kavindu-mane"/> &ensp;
-   <img src = "https://img.shields.io/github/downloads/kavindu-mane/WhatsSender/total.svg" alt = "kavindu-mane"/>
+   <img src = "https://img.shields.io/github/downloads/kavindu-mane/WhatsSender/total?color=blue" alt = "kavindu-mane"/>
 </p>
