@@ -1,5 +1,5 @@
 # WhatsSender
- WhatsSender is a simple tool for start whatsapp chat with unsaved contacts.It's support Whatsapp , Whatsapp Business and other types.
+ WhatsSender is a simple android tool for start whatsapp chat with unsaved contacts.It's support Whatsapp , Whatsapp Business and other types.
  
 ## Features
 * Support all WhatsApp versions snd types
@@ -32,6 +32,7 @@
 
 ___
 
-<p>
- 
+<p align = "center">
+   <img src = "https://img.shields.io/github/v/release/kavindu-mane/WhatsSender?label=version" alt = "kavindu-mane"/> &ensp;
+   <img src = "https://img.shields.io/github/downloads/kavindu-mane/WhatsSender/total.svg" alt = "kavindu-mane"/>
 </p>
