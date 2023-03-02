@@ -34,5 +34,6 @@ ___
 
 <p align = "center">
    <img src = "https://img.shields.io/github/v/release/kavindu-mane/WhatsSender?label=version" alt = "kavindu-mane"/> &ensp;
-   <img src = "https://img.shields.io/github/downloads/kavindu-mane/WhatsSender/total?color=blue" alt = "kavindu-mane"/>
+   <img src = "https://img.shields.io/github/downloads/kavindu-mane/WhatsSender/total?color=blue" alt = "kavindu-mane"/> &ensp;
+   <a href = "https://github.com/kavindu-mane/WhatsSender/raw/main/com.hexa2zero.whatssender.apk"><img src = "https://img.shields.io/badge/Download%20APK-%230175C2.svg?style=flat" alt = "kavindu-mane"/></a>
 </p>
