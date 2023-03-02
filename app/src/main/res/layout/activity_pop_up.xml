@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:color="?colorControlHighlight"
+    android:layout_gravity="center"
+    tools:context=".PopUpActivity">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="2dp"
+        style="@style/Theme.Background_popup"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Enter unsaved whatsapp number: "
+            android:textSize="17sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/basic"/>
+
+        <EditText
+            android:id="@+id/editText_widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="ex: 94719364390 "
+            android:layout_marginTop="70dp"
+            android:textSize="17sp"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text_bkg"
+            android:inputType="number"
+            android:fontFamily="@font/basic"
+            android:textStyle="italic"/>
+
+        <Button
+            android:id="@+id/button_widget"
+            android:layout_marginTop="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="go to"
+            android:backgroundTint="?attr/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            android:background="@drawable/buttons"
+            android:textColor="@color/white"
+            android:fontFamily="@font/basic"/>
+
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+</LinearLayout>

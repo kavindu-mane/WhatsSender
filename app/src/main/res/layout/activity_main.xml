@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    style="@style/Theme.Background"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/status_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10pt"
+        android:text="Enter unsaved whatsapp number: "
+        android:textSize="17sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="40pt"
+        android:fontFamily="@font/basic"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20pt"
+        android:hint="ex: 94719364390 "
+        android:textSize="15sp"
+        android:maxLength="11"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_bkg"
+        android:padding="15dp"
+        android:inputType="number"
+        android:fontFamily="@font/basic"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="go to"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:background="@drawable/buttons"
+        android:fontFamily="@font/basic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10pt"
+        android:layout_marginTop="20dp"
+        android:text="Select Your whatsapp type:"
+        android:textSize="17sp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/basic"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5pt"
+        android:layout_gravity="left">
+
+        <RadioButton
+            android:id="@+id/whatsapp"
+            android:text="Whatsapp. "
+            android:checked="true"
+            android:onClick="radioSelected"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:textSize="17sp"
+            android:fontFamily="@font/basic"
+            android:tag="0"/>
+
+        <RadioButton
+            android:id="@+id/whatsapp_business"
+            android:layout_width="match_parent"
+            android:text="Whatsapp business. "
+            android:onClick="radioSelected"
+            android:layout_height="20pt"
+            android:textSize="17sp"
+            android:fontFamily="@font/basic"
+            android:tag="1"/>
+
+        <RadioButton
+            android:id="@+id/others"
+            android:text="Other unofficial versions."
+            android:layout_width="match_parent"
+            android:onClick="radioSelected"
+            android:layout_height="20pt"
+            android:textSize="17sp"
+            android:fontFamily="@font/basic"
+            android:tag="2"/>
+
+        <TextView
+            android:id="@+id/other_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="-12dp"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:fontFamily="@font/basic"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="20pt"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/others_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20pt"
+            android:text="Enter your whatsapp package name:"
+            android:textSize="17sp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/basic"/>
+
+        <EditText
+            android:id="@+id/other_package"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25pt"
+            android:hint="ex: com.example.app "
+            android:textSize="17sp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/edit_text_bkg"
+            android:padding="15dp"
+            android:fontFamily="@font/basic"
+            android:textStyle="italic"/>
+
+        <Button
+            android:id="@+id/other_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Ok"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:background="@drawable/buttons"
+            android:fontFamily="@font/basic"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

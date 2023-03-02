@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:padding="@dimen/widget_margin"
+    android:gravity="center"
+    android:maxHeight="80dp"
+    android:theme="@style/ThemeOverlay.WhatsSender.AppWidgetContainer">
+
+    <LinearLayout
+        android:id="@+id/widget_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:background="@drawable/widget_btn">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="?attr/colorSecondary"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_whatsapp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:hint="Enter phone number... "
+            android:textColorHint="@color/gray"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</RelativeLayout>

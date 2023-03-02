@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WhatsSender" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/button_day</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/status_day</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.status" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:background">@color/status_day</item>
+    </style>
+
+    <style name="Theme.Background" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Theme.Background_popup" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Theme.Image" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="backgroundTint">@color/button_day</item>
+    </style>
+
+    <style name="ThemeOverlay.WhatsSender.AppWidgetContainer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorSecondary">@color/status_night</item>
+        <item name="appWidgetBackgroundColor">@color/light_blue_600</item>
+        <item name="appWidgetTextColor">@color/light_blue_50</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.MaterialComponents.DayNight.Dialog.MinWidth">
+        <item name="colorPrimary">@color/button_day</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="actionBarTabTextStyle">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+
+</resources>
