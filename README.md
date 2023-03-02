@@ -20,8 +20,8 @@
  </tr>
   <tr>
     <td> <b><i> Widget &ensp;</i></b></td>
-    <td> <img src="https://user-images.githubusercontent.com/99143916/222419829-748bb9cb-fda6-45c7-bd5c-a9c821928d1b.png" alt="kavindu-mane" style="width: 300px;"/> </td>
-    <td> <img src="https://user-images.githubusercontent.com/99143916/222419749-facbf6b0-066d-4fbe-82bf-acd5105d5577.png" alt="kavindu-mane" style="width: 300px;"/> </td>
+    <td> <img src="https://user-images.githubusercontent.com/99143916/222424840-c3401c76-a283-4c90-bd0d-c5ff4bdf23c0.png" alt="kavindu-mane" style="width: 300px;"/> </td>
+    <td> <img src="https://user-images.githubusercontent.com/99143916/222424855-af3e9525-42c6-4e79-9b8f-6e9d48cd6fd3.jpg" alt="kavindu-mane" style="width: 300px;"/> </td>
  </tr>
   <tr>
     <td> <b><i> Widget &ensp;</i></b></td>
